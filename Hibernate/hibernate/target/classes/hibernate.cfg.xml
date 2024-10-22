@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <!-- JDBC connection properties -->
+        <property name="connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/postgres</property>
+        <property name="connection.username">postgres</property>
+        <property name="connection.password">postgres</property>
+
+        <!-- Hibernate dialect -->
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+
+        <!-- Schema generation settings -->
+        <property name="hbm2ddl.auto">update</property> <!-- Can be 'validate', 'update', 'create', 'create-drop' -->
+
+        <!-- Show SQL statements in the console -->
+        <property name="show_sql">true</property>
+
+        <!-- map the class -->
+        <mapping class="org.hibernates.Student"/>
+
+        <!-- Optional: Additional properties for connection pooling -->
+        <!-- <property name="hibernate.c3p0.min_size">5</property>
+        <property name="hibernate.c3p0.max_size">20</property> -->
+    </session-factory>
+</hibernate-configuration>
