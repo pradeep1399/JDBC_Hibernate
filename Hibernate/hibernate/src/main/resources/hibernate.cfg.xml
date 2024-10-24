@@ -21,6 +21,8 @@
 
         <!-- map the class -->
         <mapping class="org.hibernates.Student"/>
+        <mapping class="org.map.Answer"/>
+        <mapping class="org.map.Question"/>
 
         <!-- Optional: Additional properties for connection pooling -->
         <!-- <property name="hibernate.c3p0.min_size">5</property>
