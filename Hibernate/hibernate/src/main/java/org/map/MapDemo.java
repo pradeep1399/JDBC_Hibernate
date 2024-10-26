@@ -26,11 +26,13 @@ public class MapDemo {
         a1.setAnswerId(232);
         a1.setAnswer("Java is programming language.");
         q1.setAnswer(a1);
+        a1.setQuestion(q1);
 
         Answer a2 = new Answer();
         a2.setAnswerId(424);
         a2.setAnswer("API to work with objects in Java.");
         q2.setAnswer(a2);
+        a2.setQuestion(q2);
 
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();

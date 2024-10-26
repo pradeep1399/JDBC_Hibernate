@@ -14,13 +14,16 @@
         <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
 
         <!-- Schema generation settings -->
-        <property name="hbm2ddl.auto">update</property> <!-- Can be 'validate', 'update', 'create', 'create-drop' -->
+        <property name="hbm2ddl.auto">create</property> <!-- Can be 'validate', 'update', 'create', 'create-drop' -->
 
         <!-- Show SQL statements in the console -->
         <property name="show_sql">true</property>
 
+        <!-- Show formated SQL Query in the console -->
+<!--        <property name="format_sql">true</property>-->
+
         <!-- map the class -->
-        <mapping class="org.hibernates.Student"/>
+<!--        <mapping class="org.hibernates.Student"/>-->
         <mapping class="org.map.Answer"/>
         <mapping class="org.map.Question"/>
 
